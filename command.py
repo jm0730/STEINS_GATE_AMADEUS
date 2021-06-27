@@ -40,7 +40,7 @@ def amadeus_command():
                 playsound('./aa\sorry.mp3')
 
         else:
-             webbrowser.open("http://www.google.com/search?client=chrome&rls=en-us&q=" + r.recognize_google(audio, language="ko-KR") + "&ie=UTF-8&oe=UTF-8")
+             webbrowser.open("http://www.google.com/search?q=" + r.recognize_google(audio, language="ko-KR"))
     
     except sr.UnknownValueError:
         print("질문을 이해할 수 없습니다.")
